@@ -18,7 +18,7 @@ public class App {
         MetodoBusqueda metodoBusqueda = new MetodoBusqueda(personas);
         Scanner scanner = new Scanner(System.in);
         int[] arreglo = {10, 15, 23, 56, 19};
-
+        
         System.out.println("Arreglo original");
         for(int i = 0; i < arreglo.length; i++){
             System.out.print(arreglo[i] + "\t");  

@@ -10,6 +10,7 @@ public class MetodoBusqueda {
     public MetodoBusqueda(Persona[] persons){
         showConsole = new ShowConsole();
         this.people = persons;
+        showPersonByCode();
     }
 
     public int busquedaLieal(int [] arreglo, int numero){
@@ -30,12 +31,12 @@ public class MetodoBusqueda {
         return -1;
     }
 
-    public void showPersonByCode(int code){
+    public void showPersonByCode(){
         int codeToFind = showConsole.getCode(); //llama al metodo de obtener un numero 
         int indexPerson = findPersonByCode(codeToFind);
         if(indexPerson >= 0){
             showConsole.showMesagge("Persona encontrada");
-            showConsole.showMesagge(people[indexPerson]);
+            showConsole.showMesagge(people[indexPerson].toString());
         }else {
             showConsole.showMesagge("Persona con codigo " +indexPerson+ " no encontrada");
         }

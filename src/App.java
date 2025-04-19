@@ -1,7 +1,6 @@
 //import java.util.Scanner;
 import models.Persona;
 import controllers.BusquedaBinaria;
-import controllers.MetodoBusqueda;
 
 public class App {
 

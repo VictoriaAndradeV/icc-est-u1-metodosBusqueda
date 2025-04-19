@@ -13,7 +13,6 @@ public class ShowConsole {
     }
 
     public int getCode(){
-
         System.out.println("Ingrese el codigo");
         int codigo = scanner.nextInt();
         System.out.println("Codigo ingresado " +codigo);

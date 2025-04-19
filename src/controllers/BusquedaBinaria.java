@@ -2,6 +2,7 @@ package controllers;
 import models.Persona;
 import views.ShowConsole;
 
+
 public class BusquedaBinaria {
 
     private Persona[] people; //variable global, arreglo de personas 
@@ -20,8 +21,8 @@ public class BusquedaBinaria {
         int alto = (people.length -1);
 
         while(bajo <= alto){
-            int central = bajo + (alto - bajo)/2;
-            //int central =
+            //int central = bajo + (alto - bajo)/2;
+            int central = (bajo + alto)/2;
 
             if(people[central].getCode() == code){
                 return central;
@@ -33,8 +34,21 @@ public class BusquedaBinaria {
                 alto = central - 1;
             }
         }
+        return -1;
+    }
+
+    /*
+    private int findPersonByName(Persona[] people){
+        for(int i = 0; )
+        
+
 
         return -1;
+    }*/
+
+    public void showPersonByName(){
+        int nameToFind = showConsole.getName();
+        int indexPerson = findPersonByCode(nameToFind);
     }
 
     public void showPersonByCode(){
